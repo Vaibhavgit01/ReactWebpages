@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
 import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
     const [ismenu, setIsMenu] = useState(false)
@@ -15,7 +16,8 @@ const Navbar = () => {
         <header className=" sticky z-50 top-0">
             <nav className="bg-white border-gray-500 px-2.5 lg:px-6 py-3 mx-auto max-w-screen-xl mt-3 shadow-xl rounded-lg">
                 <div className="flex flex-wrap justify-between items-center  ">
-                    <GiHamburgerMenu className='text-xl mx-1  border-2 border-gray-800 shadow-lg cursor-pointer rounded-lg w-10 h-8 md:hidden' onClick={handleToggle}/>
+                    {ismenu ? (<RxCross2 className='text-xl mx-1  border-2 border-gray-800 shadow-lg cursor-pointer rounded-lg w-10 h-8 md:hidden' onClick={handleToggle}/>):
+                    (<GiHamburgerMenu className='text-xl mx-1  border-2 border-gray-800 shadow-lg cursor-pointer rounded-lg w-10 h-8 md:hidden' onClick={handleToggle}/>)}
                     <Link to="/" className="flex items-center ">
                     
                         <img
@@ -24,10 +26,10 @@ const Navbar = () => {
                             alt="Logo"
                         />
                     </Link>
-                    <div className="flex items-center lg:order-2">
+                    <div className="flex items-center lg:order-2 gap-1">
                         <Link
                             to="Login"
-                            className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-black rounded-lg text-[16px] px-2 lg:px-5 py-2 lg:py-2.5 mr-1 focus:outline-none"
+                            className="bg-gray-100 text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-bold rounded-lg text-[15px] px-2 lg:px-5 py-2 lg:py-2.5 mr-1 focus:outline-none"
                         >
                             Log in
                         </Link>

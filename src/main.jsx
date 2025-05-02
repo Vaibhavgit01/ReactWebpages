@@ -6,7 +6,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Layout from './Layout.jsx'
 import Home from './Components/Home.jsx'
 import About from './Components/About.jsx'
-import Navbar from './Components/Navbar.jsx'
 import Contact from './Components/Contact.jsx'
 import Github from './Components/Github.jsx'
 import Login from './Components/Login.jsx'
@@ -43,7 +42,6 @@ const router = createBrowserRouter(
     <Route path="githubfoll" element={<Github />} />
     <Route path="Login" element={<Login />} />
     <Route 
-    // loader={githubLoader}
     path="Register" 
     element={<Register />} 
     />
