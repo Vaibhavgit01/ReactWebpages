@@ -49,7 +49,7 @@ const Navbar = () => {
                                 <NavLink
                                 to="/" onClick={handleCloseMenu} 
                                     className={({isActive}) =>
-                                        `block ${isActive ? "text-orange-600":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block ${isActive ? "text-orange-600 underline":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Home
@@ -59,7 +59,7 @@ const Navbar = () => {
                                 <NavLink
                                 to="/about" onClick={handleCloseMenu} 
                                     className={({isActive}) =>
-                                        `block ${isActive ? "text-orange-600":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block ${isActive ? "text-orange-600 underline":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     About
@@ -69,7 +69,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/contact" onClick={handleCloseMenu}
                                     className={({isActive}) =>
-                                        `block ${isActive? "text-orange-600":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b transition-allduration-200 ease-in-out border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block ${isActive? "text-orange-600 underline":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b transition-allduration-200 ease-in-out border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Contact us
@@ -79,7 +79,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/Githubfoll" onClick={handleCloseMenu} 
                                     className={({isActive}) =>
-                                        `block ${isActive? "text-orange-600":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block ${isActive? "text-orange-600 underline":"text-gray-500"} py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Github

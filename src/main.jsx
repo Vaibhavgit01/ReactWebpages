@@ -10,6 +10,7 @@ import Contact from './Components/Contact.jsx'
 import Github from './Components/Github.jsx'
 import Login from './Components/Login.jsx'
 import Register from './Components/Register.jsx'
+import Dashboard from './Components/Dashboard.jsx'
 
 
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter(
     <Route 
     path="Register" 
     element={<Register />} 
+    />
+    <Route 
+    path="Dashboard" 
+    element={<Dashboard />} 
     />
     </Route>
 

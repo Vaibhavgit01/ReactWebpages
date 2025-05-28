@@ -7,7 +7,7 @@ const About = () => {
         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12">
             <img
-              src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+              src="https://www.tatvasoft.com/blog/wp-content/uploads/2024/02/Why-Use-ReactJS-_-1.jpg"
               alt="image"
             />
           </div>
